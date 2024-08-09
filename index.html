@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-lg-center w-75"
+    >
+      <div class="title d-flex justify-content-center">
+        <h1 class="rounded-pill">NOTLARIM</h1>
+      </div>
+      <div class="input">
+        <div class="input-2">
+          <input
+            type="text"
+            id="toDo"
+            class="form-control"
+            placeholder="Bir görev giriniz..."
+          />
+          <input type="date" id="date" class="form-control" />
+        </div>
+
+        <div>
+          <button class="buton" onclick="addButon()">Ekle</button>
+        </div>
+      </div>
+
+      <div class="todoList">
+        <ul id="todos" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      to right,
+      rgba(70, 116, 184, 0.2),
+      rgba(70, 116, 184, 0.2)
+    ),
+    url(./background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+.container {
+  margin-top: 2rem;
+  padding: 3rem;
+
+  box-shadow: 3px 3px 50px wheat;
+  border-radius: 10px;
+}
+h1 {
+  background-color: #9a5952;
+  color: white !important;
+  width: 15rem;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 3px solid rgba(234, 211, 168, 0.739);
+  width: 100%;
+}
+.input-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+#toDo {
+  width: 50%;
+  border: 2px solid rgba(234, 211, 168, 0.739);
+  outline: none;
+  background: rgba(245, 222, 179, 0.824);
+}
+#date {
+  width: 150px;
+  border: none;
+  outline: none;
+  background: rgba(245, 222, 179, 0.824);
+}
+
+.buton {
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  color: white;
+  background-color: #9a5952;
+}
+.todoList {
+  width: 95%;
+  padding: 1rem;
+}
+
+.todoList h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(52, 61, 162, 0.438);
+  width: 10rem;
+  margin: auto;
+  border-radius: 20px;
+  font-weight: 200;
+}
+
+.list-group li {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  background-color: #a0564bce;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.check {
+  opacity: 0.5;
+}
+.check p {
+  text-decoration: line-through;
+}
+
+.gorev {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.delete {
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.delete:hover {
+  color: rgb(201, 60, 17);
+  background-color: rgba(255, 228, 196, 0.516);
+}
